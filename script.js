@@ -1,5 +1,18 @@
-const japanese = document.getElementById('japanese')
+const japaneseInterest = document.getElementById('japanese_interest')
+const hyogo = document.getElementById('hyogo')
 
-japanese.onclick = function () {
-    japanese.innerHTML = 'Japanese 「僕と会話の相手になるのが欲しいの？」'
+japaneseInterest.onclick = () => {
+    if (japaneseInterest.innerHTML === 'Japanese') {
+        japaneseInterest.innerHTML = '僕の会話の相手になるのが欲しいの？'
+    } else if (japaneseInterest.innerHTML === '僕の会話の相手になるのが欲しいの？') {
+        japaneseInterest.innerHTML = 'Japanese'
+    }
+}
+
+hyogo.onclick = () => {
+    if (hyogo.innerHTML === 'Hyogo Performing Arts Center Orchestra') {
+        hyogo.innerHTML = '兵庫県芸術文化センターオーケストラ'
+    } else if (hyogo.innerHTML === '兵庫県芸術文化センターオーケストラ') {
+        hyogo.innerHTML = 'Hyogo Performing Arts Center Orchestra'
+    }
 }
