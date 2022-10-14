@@ -17,8 +17,11 @@ hyogo.onclick = () => {
     }
 }
 
-let mixedMessage = document.getElementById('mixed-message');
-let messageButton = document.getElementById('message-button')
+const mixedMessage = document.getElementById('mixed-message');
+const messageButton = document.getElementById('message-button');
+const resetButton = document.getElementById('reset-button');
+resetButton.style.display = 'none'
+mixedMessage.style.display = 'none'
 
 const wordObj = {
     arr1: ['What has the', 'Hate! Hate! Hate!', 'That is the mark of the Mutant', 'The past', 'If you go looking', 'The gratitude', 'The Emperor\'s'],
@@ -30,7 +33,15 @@ const phraseGen = () => {
     let first = wordObj.arr1[Math.floor(Math.random() * wordObj.arr1.length)];
     let second = wordObj.arr2[Math.floor(Math.random() * wordObj.arr2.length)];
     let third = wordObj.arr3[Math.floor(Math.random() * wordObj.arr3.length)];
+    mixedMessage.style.display = 'block'
     mixedMessage.innerHTML = `${first} ${second} ${third}`
+    resetButton.style.display = 'inline-block'
 }
 
 messageButton.addEventListener('click', phraseGen)
+
+resetButton.onclick = function () {
+    mixedMessage.innerHTML = ''
+    mixedMessage.style.display = 'none'
+    resetButton.style.display = 'none'
+}
