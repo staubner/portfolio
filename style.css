@@ -93,6 +93,10 @@ figure {
     margin: 0 0 10px;
 }
 
+figure img {
+    max-width: 100%;
+}
+
 #contact-container {
     display: flex;
     flex-wrap: wrap;
