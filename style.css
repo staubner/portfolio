@@ -20,7 +20,7 @@ a {
 @media (hover: hover) {
     a:hover {
         background-color: darkgrey;
-        border-radius: 5%;
+        border-radius: 3px;
     }
 }
 
