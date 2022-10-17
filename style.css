@@ -24,10 +24,6 @@ a {
     }
 }
 
-button {
-    font-family: 'Open Sans', sans-serif;
-}
-
 /* navbar styles */
 .title-heading {
     font-size: 3rem;
@@ -100,4 +96,17 @@ figure {
 
 #project {
     border-top: 1px solid black;
+}
+
+#mixed-message {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#message-window {
+    text-align: center;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
 }
