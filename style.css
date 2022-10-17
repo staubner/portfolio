@@ -5,10 +5,6 @@ html {
 }
 
 body {
-    margin: 0;
-}
-
-main {
     margin: 0 auto;
     width: 90%;
 }
@@ -78,9 +74,10 @@ figure {
 #about-me,
 #project-container,
 #fun-facts,
-#contact-container {
-    width: 90%;
-    max-width: 1400px;
+#contact-container,
+footer {
+    width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -109,4 +106,8 @@ figure {
 
 button {
     font-family: 'Open Sans', sans-serif;
+}
+
+footer {
+    border-top: 1px solid black;
 }
