@@ -78,7 +78,8 @@ footer {
 }
 
 .project-image {
-    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .project-image img {
